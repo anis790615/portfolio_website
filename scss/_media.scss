@@ -62,18 +62,16 @@
       }
     }
   }
-}
-
-// About
-#about {
-  &-1 {
-    .about-info {
-      grid-template-areas:
-        "bio-image"
-        "bio-text";
+  // About
+  #about {
+    &-1 {
+      .about-info {
+        grid-template-areas:
+          "bio-image"
+          "bio-text";
+      }
     }
   }
-
   // Contact Page
   #contact {
     &-1 {
@@ -104,7 +102,6 @@
       }
     }
   }
-
   // Footer
   #main-footer {
     height: 7rem;
@@ -120,15 +117,15 @@
       }
     }
   }
+}
 
-  // landscape
-  @media (max-height: 580px) {
-    #header-main {
-      .header-content {
-        padding-top: 2.5rem;
-        h1 {
-          font-size: 2.9rem;
-        }
+// landscape
+@media (max-height: 580px) {
+  #header-main {
+    .header-content {
+      padding-top: 2.5rem;
+      h1 {
+        font-size: 2.9rem;
       }
     }
   }
