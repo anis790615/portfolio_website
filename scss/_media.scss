@@ -73,61 +73,62 @@
         "bio-text";
     }
   }
-}
-// Contact Page
-#contact {
-  &-1 {
-    .text-fields {
-      grid-template-areas:
-        "name"
-        "subject"
-        "email"
-        "phone"
-        "message";
+
+  // Contact Page
+  #contact {
+    &-1 {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
     }
-  }
-  &-2 {
-    .contact-info div {
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #555;
-      &:last-child {
-        border: none;
-        margin-bottom: 0;
-        padding-bottom: 0;
+    &-2 {
+      .contact-info div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #555;
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+    &-3 {
+      h1 {
+        font-size: 1.7rem;
       }
     }
   }
-  &-3 {
-    h1 {
-      font-size: 1.7rem;
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+      p {
+        font-size: 0.8rem;
+        padding: 0.75rem;
+      }
     }
   }
-}
 
-// Footer
-#main-footer {
-  height: 7rem;
-
-  .footer-content {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
-    p {
-      font-size: 0.8rem;
-      padding: 0.75rem;
-    }
-  }
-}
-
-// landscape
-@media (max-height: 580px) {
-  #header-main {
-    .header-content {
-      padding-top: 2.5rem;
-      h1 {
-        font-size: 2.9rem;
+  // landscape
+  @media (max-height: 580px) {
+    #header-main {
+      .header-content {
+        padding-top: 2.5rem;
+        h1 {
+          font-size: 2.9rem;
+        }
       }
     }
   }
